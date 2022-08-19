@@ -1,0 +1,126 @@
+.bg {
+    background: url('../img/bg-symbol.svg') no-repeat center top, $gradient-supersoft;
+    background-size: 523px 600px, cover;
+    border-radius: 0 0 12px 12px; 
+    position: relative;   
+}
+
+.bg-services {
+    background: none no-repeat, $gradient-supersoft;
+}
+
+.bg::after {
+    content: '';
+    height: 10px;
+    background: #CACADB;
+    border-radius: 0 0 12px 12px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: -10px;
+}
+
+.bg::before {
+    content: '';
+    height: 10px;
+    background: #E7E7F2;
+    border-radius: 0 0 12px 12px;
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    bottom: -20px;
+}
+
+.home__title {
+    padding-bottom: 159px;
+    padding-top: 129px;
+    font-size: 38px;
+    line-height: 46px;
+    text-align: center;
+    color: $white;
+}
+
+.home__link {
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.home__link-circle:hover circle {
+    stroke: $pink;
+}
+
+.home__link-circle:hover path {
+    stroke: $pink;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 30px 0 0 0;
+}
+
+.dots li {
+    margin-right: 15px;
+}
+
+.dots__item {
+    cursor: pointer;
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    background: $active-regular;
+    opacity: 0.2;
+    border-radius: 8px;
+    border: none;
+}
+
+.dots__item:hover {
+    opacity: 0.6;
+}
+
+.dots__item.active {
+    background: $active-regular;
+    opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .bg {
+        background-size: 893px 1024px, cover;
+    }
+
+    .home__title {
+        padding-top: 269px;
+        padding-bottom: 417px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bg {
+        background-size: 670px 768px, cover;
+    }
+
+    .home__title {
+        padding-top: 231px;
+        padding-bottom: 287px;
+    }
+
+    .home__link {
+        padding-bottom: 86px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) { 
+    .bg {
+        background-size: 697px 799px, cover;
+    }
+    
+    .home__title {
+        padding-top: 261px;
+        padding-bottom: 305px;
+    }
+}
+
+

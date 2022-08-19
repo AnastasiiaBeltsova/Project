@@ -1,0 +1,195 @@
+.contact {
+    padding: 30px;
+}
+
+.contact__adress {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 30px;
+    color: $main-regular;
+    padding-bottom: 30px;
+    border-bottom: 4px solid $grey-separator;
+}
+
+.contact__phone {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 30px;
+    color: $main-alt;
+}
+
+.contact__phone-wrap {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.contact__mail {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 30px;
+    color: $active-regular;
+    text-transform: lowercase;
+}
+
+.contact__mail-wrap {
+    padding-bottom: 30px;
+    border-bottom: 4px solid $grey-separator;
+}
+
+.contact__fb path {
+    fill: $active-regular;
+}
+
+.contact__fb-wrap a:hover path {
+    color: $pink;
+    fill: $pink;
+}
+
+.contact__fb-wrap a:hover {
+    color: $pink;
+}
+
+.contact__fb {
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+}
+
+
+.contact__fb-wrap {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.contact__fb-link {
+    display: flex;
+    align-items: center;
+}
+
+.contact__fb-wrap a {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $active-regular;
+}
+
+.contact__form {
+    background-color: $grey-bg;
+    border-radius: 12px;
+    padding: 30px;
+    margin-right: 59px;
+}
+
+.contact__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    background: $gradient-red-text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding-bottom: 30px;
+}
+
+.contact__name {
+    padding-bottom: 15px;
+}
+
+.contact__name input {
+    width: 100%;
+    background: $white;
+    border: 1px solid $white;
+    border-radius: 8px;
+    padding: 15px
+}
+
+.contact__name input::placeholder {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $grey-text;
+}
+
+.contact__message {
+    width: 100%;
+    height: 130px;
+    background: $white;
+    border: 1px solid $white;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.contact__message::placeholder {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $grey-text;
+}
+
+.contact__answer {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $grey-text;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.contact__name:last-child {
+    padding-bottom: 30px;
+}
+
+.contact__btn {
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: $white;
+    background: $active-regular;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    border: none;
+    padding: 18px 36px;
+    margin-top: 15px;
+}
+
+.contact__btn:hover {
+    background: $active-hover;
+}
+
+@media screen and (min-width: 768px) { 
+    .contact {
+        padding: 0 60px 60px 60px;
+    }
+
+    .contact__form {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .contact {
+        padding: 0 180px 60px;
+    }
+}

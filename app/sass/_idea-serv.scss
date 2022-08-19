@@ -1,0 +1,100 @@
+.idea-serv {
+    padding: 30px;
+}
+
+.idea-serv__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    background: $gradient-red-text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding-bottom: 28px;
+}
+
+.idea-serv__text {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    color: $black;
+    padding-bottom: 30px;
+}
+
+.statistic {
+    border-left: 4px solid $grey-separator;
+    padding-left: 30px;
+}
+
+.statistic__item {
+    padding-bottom: 40px;
+}
+
+.statistic__item:last-child {
+    padding-bottom: 0;
+}
+
+.statistic__numb {
+    font-size: 36px;
+    line-height: 44px;
+    background: $gradient-red-text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding-bottom: 10px;
+}
+
+.statistic__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $main-regular;
+}
+
+@media screen and (min-width: 768px) {
+    .idea-serv {
+        padding: 60px;
+    }
+
+    .idea-serv__title {
+        font-size: 38px;
+        line-height: 46px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .idea-serv {
+        display: flex;
+    }
+
+    .idea-serv__block {
+        width: 60%;
+        padding-right: 30px;
+    }
+
+    .statistic {
+        width: 40%;
+        height: 322px;
+    }
+
+    .idea-serv__text {
+        padding-bottom: 0;
+        font-size: 19px;
+        line-height: 30px;
+        max-width: 486px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .idea-serv {
+        padding: 60px 180px;
+    }
+
+    .idea-serv__text {
+        max-width: 100%;
+    }
+
+    .statistic {
+        max-width: 388px;
+    }
+}
