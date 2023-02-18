@@ -1,17 +1,20 @@
-const gulp = require('gulp'),
-    browserSync = require('browser-sync'),
-    sass = require('gulp-sass'),
-    sourcemap = require("gulp-sourcemaps"),
-    cleanCSS = require('gulp-clean-css'),
-    mediaQueries = require('gulp-group-css-media-queries'),
-    postcss = require("gulp-postcss"),
-    autoprefixer = require("autoprefixer"),
-    htmlMin = require('gulp-htmlmin'),
-    imagemin = require("gulp-imagemin"),
-    svgstore = require("gulp-svgstore"),
-    del = require('del'),
-    rename = require('gulp-rename'),
-    replace = require('gulp-replace');
+import gulp from "gulp";
+import imagemin from "gulp-imagemin";
+
+import browserSync from "browser-sync";
+import sourcemap from "gulp-sourcemaps";
+import cleanCSS from "gulp-clean-css";
+import mediaQueries from "gulp-group-css-media-queries";
+import postcss from "gulp-postcss";
+import autoprefixer from "autoprefixer";
+import htmlMin from "gulp-htmlmin";
+import svgstore from "gulp-svgstore";
+import del from "del";
+import rename from "gulp-rename";
+import replace from "gulp-replace";
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+const sass = gulpSass(dartSass);
 
 gulp.task('browser-sync', function () {
     browserSync({
