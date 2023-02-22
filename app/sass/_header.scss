@@ -251,9 +251,14 @@
 
     .menu__list {
         background-color: transparent;
+        position: static;
         display: flex;
         padding: 0;
         border-radius: 0;
+    }
+
+    .menu__list-close {
+        display: none;
     }
 
     .menu__list li {
