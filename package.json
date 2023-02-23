@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
+    "homepage": "https://anastasiiabeltsova.github.io/Project/",
     "type": "module",
     "devDependencies": {
         "autoprefixer": "^10.4.2",
